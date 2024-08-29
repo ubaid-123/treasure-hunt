@@ -1,13 +1,17 @@
-# Sample Hardhat Project
+# Treasure Hunt
+![image](https://github.com/user-attachments/assets/02247e77-48e3-46aa-8372-c298e0fbd247)
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+# Design Choices
+1. For storing player positions I declared a mapping.
+2. If the player is joined then isPlayerJoined will 'true'.
+3. Player will call join game function If user wants to make move.
+4. For randomness, I uses blockhash and block number to generate random number.
 
-Try running some of the following tasks:
+# Installation
+npm install
 
-```shell
-npx hardhat help
+# Compile
+npx hardhat compile
+
+# Test
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
